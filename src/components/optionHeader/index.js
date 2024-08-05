@@ -1,3 +1,5 @@
+import './style.css'
+
 const headerOption = ['CATEGORIA', 'FAVORITOS', 'MINHA ESTANTE']
 
 function OptionHeader() {
