@@ -1,5 +1,7 @@
 # Getting Started with Create React App
 
+Deploy in Vercel: https://vercel.com/gutosilquis-projects/projeto-fullstack
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
