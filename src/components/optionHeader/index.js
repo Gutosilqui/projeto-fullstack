@@ -28,4 +28,4 @@ function OptionHeader() {
   )
 }
 
-export default OptionHeader;
+export default OptionHeader
