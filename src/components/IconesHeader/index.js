@@ -16,11 +16,11 @@ const icones = [perfil, sacola]
 
 function IconesHeader() {
     return(
-        <Icones>
-          { icones.map( (icone) => (
-            <Icone><img src={icone}  alt='Icones'/></Icone>
-          ) ) }
-        </Icones>
+      <Icones>
+        { icones.map( (icone) => (
+          <Icone><img src={icone}  alt='Icones'/></Icone>
+        ) ) }
+      </Icones>
     )
 }
 

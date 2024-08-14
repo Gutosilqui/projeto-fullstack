@@ -14,7 +14,7 @@ function Logo() {
     return (
         <LogoContainer>
           <LogoImage src={logo} alt='logo'/>
-          <p><strong>AntiVirus</strong> Books</p>
+          <p><strong>Site em Construção</strong></p>
         </LogoContainer>
     )
 }
