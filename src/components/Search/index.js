@@ -12,16 +12,34 @@ const SearchContainer = styled.section`
     width: 100%;
 `
 const Titulo = styled.h2`
-        color: #FFF;
-        font-size: 36px;
-        text-align: center;
-        width: 100%;
+    color: #FFF;
+    font-size: 36px;
+    text-align: center;
+    width: 100%;
 `
 
 const Subtitulo = styled.h3`
     font-size: 16px;
     font-weight: 500;
     margin-bottom: 40px;
+`
+
+const Result = styled.div`
+    background-color: #134;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+    p {
+        width: 200px;
+    }
+    img {
+        width: 100px;
+    }
+    &:hover {
+        border: 1px solid white;
+    }
 `
 
 function Search() {
@@ -39,7 +57,13 @@ function Search() {
                     setLivrosPesquisados(resultSearch)
                 }}
             />
-            
+
+            { livrosPesquisados.map( livros => (
+                <Result>
+                    <p>{livros.nome}</p>
+                    <img src={livros.src}/>
+                </Result>
+            )) }
         </SearchContainer>
     )
 }
