@@ -15,15 +15,20 @@ const Options = styled.li`
     padding: 0 5px;
     cursor: pointer;
 `
+const Paragrafo = styled.p`
+  padding:0 16px;
+`
 
 const headerOption = ['CATEGORIA', 'FAVORITOS', 'MINHA ESTANTE']
 
 function OptionHeader() {
   return(
     <OptionContainer>
-      { headerOption.map( (options) => (
-        <Options><p>{options}</p></Options>
-      ) ) }
+      <Options>
+        { headerOption.map( (options) => (
+          <Paragrafo>{options}</Paragrafo>
+        ) ) }
+      </Options>
     </OptionContainer>
   )
 }
